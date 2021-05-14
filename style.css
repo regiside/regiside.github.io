@@ -1,0 +1,309 @@
+/******************************************************/
+/*********************** General ***********************/
+/******************************************************/
+
+p{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 500;
+    letter-spacing:.04em;
+}
+
+a{text-decoration: none;}
+
+body.light-text{
+    color:#eaeaea;
+}
+
+img{
+    max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 600;
+}
+
+.center{text-align: center;}
+
+.centered{margin:auto; display: inline-block;}
+
+.no-touch{pointer-events: none;}
+
+.section{padding:30px 0;}
+
+body{overflow-x: hidden;}/*fixes scroll bars from appearing caused by animated objects moving outside the area.*/
+/*
+.section:last-child{
+    padding-bottom: 0;
+}
+*/
+
+
+
+.mamba-bg-tile{
+    background:url(images/mamba-background-tile-s2.jpg);
+    background-size:214px;
+}
+
+/******************************************************/
+/*********************** Header ***********************/
+/******************************************************/
+
+.header-logo{
+    background:url(images/header-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:150px;
+    height:70px;
+    margin:10px;
+}
+
+.header-bg-bw{
+    background-image: url(images/BW-snake-24.png);
+    position: absolute;
+    width: 100%;
+    height: 45vw;
+/*    padding-bottom: 50%;*/
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+    max-height: 600px;
+}
+
+.header-wrapper{background:rgba(0,0,0,.8);}
+
+.header-menu li{
+    align-items: center;
+    display: flex;
+    font-family: aktiv-grotesk, sans-serif;
+}
+
+.nav-pills .nav-link.default-btn{
+    background: #ffd504;
+    color:#000;
+    border-radius: 50em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: solid 2px #fdb717;
+    padding:10px;
+}
+
+.default-btn{
+    background: #ffd504;
+    color:#000;
+    border-radius: 500em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: solid 3px #fdb717;
+    padding:24px 30px;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease;
+    display:inline-block;
+    overflow:hidden;
+    box-shadow: 0 19px 16px -20px rgba(0,0,0,.3);
+}
+.default-btn:active{
+    transform: scale(.8);
+}
+
+.default-btn:hover{
+    color:#fff;
+    background:#ec00cf;
+    border: solid 3px #92008e;
+    transform:scale(1.03);
+    box-shadow: 0 23px 20px -20px rgba(0,0,0,.4);
+}
+
+.default-btn::before{
+    content:'';
+    position: absolute;
+    left:2px;
+    top:2px;
+    right:2px;
+    bottom:2px;
+    border:1px solid rgba(255,255,255,.6);
+    border-radius: 500em;
+}
+
+
+.default-btn:hover::before{
+    border:1px solid rgba(0,0,0,.2);
+}
+
+.default-btn::after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.3);
+    background: linear-gradient(180deg, rgba(255,255,255,.3) 0%, rgba(255,255,255,0) 100%);
+    left:-50%;
+    top: 50%;
+    transform:rotate(45deg);
+    transition: all .5s ease;
+}
+
+.default-btn:hover::after{
+    left:-10%;
+    top:60%;
+/*    background: linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,0) 100%);*/
+}
+
+.nav.social {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.nav.social li {
+  float: left;
+  font-size: 1em;
+  margin-right: 20px;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+    
+}
+.nav.social li a {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    height: 40px;
+    position: relative;
+    text-decoration: none;
+    width: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    opacity:.9;
+}
+.nav.social li a i {
+    position: relative;
+    z-index: 1;
+}
+.nav.social li a .inner {
+    background-color: #000;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.nav.social li a:hover {
+    color: #fff;
+    opacity:1;
+}
+.nav.social li a:hover .inner {
+    height: 38px;
+    margin-left: -19px;
+    margin-top: -19px;
+    width: 38px;
+}
+
+.section-title{margin-bottom:52px;}
+
+.cta-row{
+    padding: 60px 10px 5px;
+}
+.cta-row-2{
+    padding-bottom: 40px;
+}
+
+.blurb{
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.blurb:last-child{margin-bottom: 0;}
+
+.blurb-icon{max-width:130px;}
+
+.blurb div{padding-right:20px;}
+
+
+.what-you-get-list{
+    font-weight: 700;
+    letter-spacing: .04em;
+    line-height: 1.9em;
+    margin-bottom:5px;
+}
+.disclaimer-wrapper{
+    background: rgba(0,0,0,.5);
+    padding: 30px;
+}
+
+.disclaimer-p{
+    font-size:10pt;
+    max-width:650px;
+    margin:auto;
+    font-weight: 400;
+    letter-spacing: .04em;
+    line-height: 1.6em;
+    color:rgba(255,255,255,.8);
+}
+
+footer{
+    background: rgba(0,0,0,.8);
+    padding: 10px 20px;
+    
+}
+footer p{
+    margin-bottom: 0; 
+    color:rgba(255,255,255,.8);
+    text-transform: uppercase;
+    font-size: 9pt;
+    letter-spacing: .04em;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+}
+  
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+
+/*Mobile Styles:*/
+@media screen and (max-width:767px){
+    .header-wrapper{display:none;}
+    .what-you-get-section{width:87%; margin:auto;}
+    .what-you-get-column-one{margin-bottom: 40px;}
+    .blurb{
+        text-align: center;
+        justify-content: center;
+        width:80%;
+        margin:0 auto 20px!important;
+        font-size: 10pt;
+    }
+    
+    .blurb-icon img{
+        margin-bottom: 10px;
+    }
+    
+    .cta-row{
+        padding: 40px 10px;
+    }
+
+}
