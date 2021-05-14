@@ -30,9 +30,10 @@ h1,h2,h3,h4,h5,h6{
 .no-touch{pointer-events: none;}
 
 .section{padding:30px 0;}
-
+.container{
+    overflow: hidden; /*attempt scroll bars from appearing caused by animated objects moving outside the area.*/
+}
 body{
-    /*overflow-x: hidden; attempt scroll bars from appearing caused by animated objects moving outside the area.*/
     -webkit-font-smoothing: antialiased;
 }
 /*
@@ -415,7 +416,7 @@ footer p{
         min-height: calc(80vh);
         align-items: center;
         justify-content: center;
-        margin-bottom: 50px;
+        margin-bottom: 16vh;
     }
     .what-you-get-section{width:87%; margin:auto;}
     .what-you-get-column-one{margin-bottom: 40px;}
@@ -428,12 +429,16 @@ footer p{
     }
     
     .blurb-icon img{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     
     .cta-row{
         padding: 40px 10px;
     }
+    
+    .cta-row-1{padding-top:70px;}
+    .cta-row-2{padding: 10px 10px 40px;}
+    
     footer p{text-align: center;}
 }
 
